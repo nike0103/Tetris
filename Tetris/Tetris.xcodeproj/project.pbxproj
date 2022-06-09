@@ -18,6 +18,7 @@
 		BC00E9CC2851B2F300CB10E3 /* TetrisButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC00E9CB2851B2F300CB10E3 /* TetrisButtonView.swift */; };
 		BC00E9CE2851CE4800CB10E3 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC00E9CD2851CE4800CB10E3 /* GradientView.swift */; };
 		BCBC45762848829900ED7997 /* StartScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBC45752848829900ED7997 /* StartScreen.swift */; };
+		7981B4E028513F0E008E694F /* Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7981B4DF28513F0E008E694F /* Block.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		BC00E9CB2851B2F300CB10E3 /* TetrisButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TetrisButtonView.swift; sourceTree = "<group>"; };
 		BC00E9CD2851CE4800CB10E3 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		BCBC45752848829900ED7997 /* StartScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScreen.swift; sourceTree = "<group>"; };
+		7981B4DF28513F0E008E694F /* Block.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Block.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,8 @@
 				BC00E9C72851B28400CB10E3 /* TetrisTheme.swift */,
 				BC00E9CB2851B2F300CB10E3 /* TetrisButtonView.swift */,
 				BC00E9CD2851CE4800CB10E3 /* GradientView.swift */,
+				5B26FEE328327FB900A94C97 /* Assets.xcassets */,
+				7981B4DF28513F0E008E694F /* Block.swift */,
 				4C074AEA2848783F00FC3514 /* BlockView.swift */,
 				5B26FEE128327FB700A94C97 /* ContentView.swift */,
 				4C074AEC2848788500FC3514 /* PlaygroundViewModel.swift */,
@@ -163,6 +167,7 @@
 				4C074AE9284877B000FC3514 /* PlayView.swift in Sources */,
 				5B26FEE228327FB700A94C97 /* ContentView.swift in Sources */,
 				BC00E9CE2851CE4800CB10E3 /* GradientView.swift in Sources */,
+				7981B4E028513F0E008E694F /* Block.swift in Sources */,
 				5B26FEE028327FB700A94C97 /* TetrisApp.swift in Sources */,
 				BC00E9C82851B28400CB10E3 /* TetrisTheme.swift in Sources */,
 				BCBC45762848829900ED7997 /* StartScreen.swift in Sources */,
