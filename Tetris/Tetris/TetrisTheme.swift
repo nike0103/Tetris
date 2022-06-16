@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-public struct ColourTheme {
+struct ColourTheme {
     static let primaryColor: Color = .purple
     static let secondaryColor: Color = .yellow
 }

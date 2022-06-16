@@ -13,6 +13,7 @@
 		5B26FEE728327FB900A94C97 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B26FEE628327FB900A94C97 /* Preview Assets.xcassets */; };
 		BC00E9C82851B28400CB10E3 /* TetrisTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC00E9C72851B28400CB10E3 /* TetrisTheme.swift */; };
 		BC00E9CC2851B2F300CB10E3 /* TetrisButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC00E9CB2851B2F300CB10E3 /* TetrisButtonView.swift */; };
+		BC00E9CE2851CE4800CB10E3 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC00E9CD2851CE4800CB10E3 /* GradientView.swift */; };
 		BCBC45762848829900ED7997 /* StartScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBC45752848829900ED7997 /* StartScreen.swift */; };
 /* End PBXBuildFile section */
 
@@ -24,6 +25,7 @@
 		5B26FEE628327FB900A94C97 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BC00E9C72851B28400CB10E3 /* TetrisTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TetrisTheme.swift; sourceTree = "<group>"; };
 		BC00E9CB2851B2F300CB10E3 /* TetrisButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TetrisButtonView.swift; sourceTree = "<group>"; };
+		BC00E9CD2851CE4800CB10E3 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		BCBC45752848829900ED7997 /* StartScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -62,6 +64,7 @@
 				BCBC45752848829900ED7997 /* StartScreen.swift */,
 				BC00E9C72851B28400CB10E3 /* TetrisTheme.swift */,
 				BC00E9CB2851B2F300CB10E3 /* TetrisButtonView.swift */,
+				BC00E9CD2851CE4800CB10E3 /* GradientView.swift */,
 				5B26FEE328327FB900A94C97 /* Assets.xcassets */,
 				5B26FEE528327FB900A94C97 /* Preview Content */,
 			);
@@ -148,6 +151,7 @@
 			files = (
 				BC00E9CC2851B2F300CB10E3 /* TetrisButtonView.swift in Sources */,
 				5B26FEE228327FB700A94C97 /* ContentView.swift in Sources */,
+				BC00E9CE2851CE4800CB10E3 /* GradientView.swift in Sources */,
 				5B26FEE028327FB700A94C97 /* TetrisApp.swift in Sources */,
 				BC00E9C82851B28400CB10E3 /* TetrisTheme.swift in Sources */,
 				BCBC45762848829900ED7997 /* StartScreen.swift in Sources */,
