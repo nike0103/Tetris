@@ -12,14 +12,15 @@ struct StartScreen: View {
     var highScore = 1080
     
     var body: some View {
-        ZStack{
-            GradientView()
-            VStack{
-                Text("High Score").font(.headline).padding()
-                Text("\(highScore)").font(.largeTitle).padding()
-
-                Text("Welcome \(userName)").font(.largeTitle).padding()
-                TetrisButtonView(buttonTitle: "Start Game")
+        NavigationView{
+            ZStack{
+                GradientView()
+                VStack{
+                    Text("High Score").font(.headline).padding()
+                    Text("\(highScore)").font(.largeTitle).padding()
+                    Text("Welcome \(userName)").font(.largeTitle).padding()
+                    TetrisButtonView(buttonTitle: "Start Game", view: AnyView(PlayView(viewModel: .init()).navigationBarHidden(true)))
+                }
             }
         }
     }

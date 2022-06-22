@@ -13,6 +13,7 @@ struct PlayView: View {
     var body: some View {
         GeometryReader { frame in
             VStack(spacing: 0) {
+                Text("hello")
                 Spacer()
                 ForEach((0..<rows), id:\.self) { row in
                     HStack(spacing: 0) {
@@ -22,6 +23,8 @@ struct PlayView: View {
                                 .onTapGesture {
                                     viewModel.tap()
                                 }
+                                .border(.black, width: 0.2)
+                                .shadow(color: .black, radius: 3.0, x: 0, y: 0)
                         }
                     }
                 }

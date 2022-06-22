@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct GrowingButton: ButtonStyle {
+private struct GrowingButton: ButtonStyle {
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
             .padding()
@@ -21,9 +21,17 @@ struct GrowingButton: ButtonStyle {
 
 struct TetrisButtonView: View {
     let buttonTitle: String
-    var body: some View {
-        Button {
-            print(buttonTitle)
+    let view: AnyView
+    
+    func buttonAction<T: View>(nextView: (T)) -> T{
+        return nextView
+           // .navigationBarBackButtonHidden(hidden())
+    }
+    var body : some View {
+        NavigationLink {
+            //PlayView(viewModel: .init())
+            buttonAction(nextView: view)
+            //buttonAction(nextView = view)
         } label: {
             Text(buttonTitle)
         }
@@ -33,6 +41,6 @@ struct TetrisButtonView: View {
 
 struct TetrisButtonView_Previews: PreviewProvider {
     static var previews: some View {
-        TetrisButtonView(buttonTitle: "Hello World")
+        TetrisButtonView(buttonTitle: "Hello World", view: AnyView(PlayView(viewModel: .init())))
     }
 }
