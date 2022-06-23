@@ -2,7 +2,6 @@ import SwiftUI
 
 struct PlayView: View {
     @ObservedObject var viewModel: PlaygroundViewModel
-    @Environment(\.presentationMode) var presentationMode
     var rows: Int {
         viewModel.matrix.count
     }
@@ -11,9 +10,6 @@ struct PlayView: View {
     }
 
     var body: some View {
-        Button("Dismiss") {
-            presentationMode.wrappedValue.dismiss()
-        }
         GeometryReader { frame in
             VStack(spacing: 0) {
                 Spacer()
