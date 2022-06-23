@@ -21,26 +21,18 @@ private struct GrowingButton: ButtonStyle {
 
 struct TetrisButtonView: View {
     let buttonTitle: String
-    let view: AnyView
+    let handler: () -> Void
     
-    func buttonAction<T: View>(nextView: (T)) -> T{
-        return nextView
-           // .navigationBarBackButtonHidden(hidden())
-    }
     var body : some View {
-        NavigationLink {
-            //PlayView(viewModel: .init())
-            buttonAction(nextView: view)
-            //buttonAction(nextView = view)
+        Button {
+            handler()
         } label: {
             Text(buttonTitle)
-        }
-        .buttonStyle(GrowingButton())
+        }.buttonStyle(GrowingButton())
     }
 }
 
-struct TetrisButtonView_Previews: PreviewProvider {
-    static var previews: some View {
-        TetrisButtonView(buttonTitle: "Hello World", view: AnyView(PlayView(viewModel: .init())))
-    }
-}
+//struct TetrisButtonView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        TetrisButtonView(buttonTitle: "Hello World")
+//}

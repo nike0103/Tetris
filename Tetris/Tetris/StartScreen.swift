@@ -10,18 +10,21 @@ import SwiftUI
 struct StartScreen: View {
     var userName = "USER1234"
     var highScore = 1080
+    @State private var showGame = false
     
     var body: some View {
-        NavigationView{
-            ZStack{
-                GradientView()
-                VStack{
-                    Text("High Score").font(.headline).padding()
-                    Text("\(highScore)").font(.largeTitle).padding()
-                    Text("Welcome \(userName)").font(.largeTitle).padding()
-                    TetrisButtonView(buttonTitle: "Start Game", view: AnyView(PlayView(viewModel: .init()).navigationBarHidden(true)))
+        ZStack{
+            GradientView()
+            VStack{
+                Text("High Score").font(.headline).padding()
+                Text("\(highScore)").font(.largeTitle).padding()
+                Text("Welcome \(userName)").font(.largeTitle).padding()
+                TetrisButtonView(buttonTitle: "Start Game") {
+                    showGame = true
                 }
             }
+        }.fullScreenCover(isPresented: $showGame, onDismiss: nil) {
+            PlayView(viewModel: .init())
         }
     }
 }
