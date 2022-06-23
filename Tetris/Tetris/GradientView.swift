@@ -8,14 +8,14 @@
 import SwiftUI
 
 struct GradientView: View {
-    @State private var animateGradient = true
+    @State private var animateGradient = false
     
     var body: some View {
-        LinearGradient(colors: [ColourTheme.primaryColor, ColourTheme.secondaryColor], startPoint: .topLeading, endPoint: .bottomTrailing)
+        LinearGradient(colors: [.primaryColor, .secondaryColor], startPoint: .topLeading, endPoint: .bottomTrailing)
             .ignoresSafeArea()
             .onAppear {
                     withAnimation(.linear(duration: 2.0).repeatForever(autoreverses: true)) {
-                        animateGradient.toggle()
+                        animateGradient = false
                     }
             }
     }

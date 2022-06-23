@@ -5,7 +5,6 @@ struct PlayView: View {
     var rows: Int {
         viewModel.matrix.count
     }
-
     var columns: Int {
         viewModel.matrix.first?.count ?? 0
     }
