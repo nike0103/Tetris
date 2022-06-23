@@ -32,7 +32,10 @@ struct TetrisButtonView: View {
     }
 }
 
-//struct TetrisButtonView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        TetrisButtonView(buttonTitle: "Hello World")
-//}
+struct TetrisButtonView_Previews: PreviewProvider {
+    static var previews: some View {
+        TetrisButtonView(buttonTitle: "Hello World") {
+            PlayView(viewModel: .init())
+        }
+    }
+}
