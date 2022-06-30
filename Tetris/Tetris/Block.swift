@@ -6,7 +6,7 @@ protocol BlockProtocol {
 }
 
 enum BlockShape: CaseIterable  {
-    case L, Z, Box, I, T
+    case L, Z, Box, Line, T
     
     var block: BlockProtocol {
         switch self {
@@ -16,8 +16,8 @@ enum BlockShape: CaseIterable  {
             return ZBlock()
         case .Box:
             return BoxBlock()
-        case .I:
-            return IBlock()
+        case .Line:
+            return LineBlock()
         case .T:
             return TBlock()
         }
@@ -34,7 +34,6 @@ class LBlock: BlockProtocol{
 
 class ZBlock: BlockProtocol{
     var matrix: [[Int]] = [[1,1,0],
-                           [0,1,0],
                            [0,1,1]]
     
     func rotateMatrix() {}
@@ -47,18 +46,16 @@ class BoxBlock: BlockProtocol{
     func rotateMatrix() {}
 }
 
-class IBlock: BlockProtocol{
-    var matrix: [[Int]] = [[0, 1],
-                           [0, 1],
-                           [0, 1],
-                           [0, 1]]
+class LineBlock: BlockProtocol{
+    var matrix: [[Int]] = [[1],
+                           [1],
+                           [1]]
     
     func rotateMatrix() {}
 }
 
 class TBlock: BlockProtocol{
     var matrix: [[Int]] = [[1,1,1],
-                           [0,1,0],
                            [0,1,0]]
     
     func rotateMatrix() {}
