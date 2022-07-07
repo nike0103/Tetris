@@ -14,6 +14,7 @@
 		5B26FEE228327FB700A94C97 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B26FEE128327FB700A94C97 /* ContentView.swift */; };
 		5B26FEE428327FB900A94C97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B26FEE328327FB900A94C97 /* Assets.xcassets */; };
 		5B26FEE728327FB900A94C97 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B26FEE628327FB900A94C97 /* Preview Assets.xcassets */; };
+		5B567B05286D5F8E00F47B1E /* RotateMatrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B567B04286D5F8E00F47B1E /* RotateMatrix.swift */; };
 		BC00E9C82851B28400CB10E3 /* TetrisTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC00E9C72851B28400CB10E3 /* TetrisTheme.swift */; };
 		BC00E9CC2851B2F300CB10E3 /* TetrisButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC00E9CB2851B2F300CB10E3 /* TetrisButtonView.swift */; };
 		BC00E9CE2851CE4800CB10E3 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC00E9CD2851CE4800CB10E3 /* GradientView.swift */; };
@@ -29,6 +30,7 @@
 		5B26FEE128327FB700A94C97 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5B26FEE328327FB900A94C97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5B26FEE628327FB900A94C97 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5B567B04286D5F8E00F47B1E /* RotateMatrix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotateMatrix.swift; sourceTree = "<group>"; };
 		BC00E9C72851B28400CB10E3 /* TetrisTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TetrisTheme.swift; sourceTree = "<group>"; };
 		BC00E9CB2851B2F300CB10E3 /* TetrisButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TetrisButtonView.swift; sourceTree = "<group>"; };
 		BC00E9CD2851CE4800CB10E3 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 				4C074AE8284877B000FC3514 /* PlayView.swift */,
 				5B26FEE328327FB900A94C97 /* Assets.xcassets */,
 				5B26FEE528327FB900A94C97 /* Preview Content */,
+				5B567B04286D5F8E00F47B1E /* RotateMatrix.swift */,
 			);
 			path = Tetris;
 			sourceTree = "<group>";
@@ -167,6 +170,7 @@
 				BC00E9C82851B28400CB10E3 /* TetrisTheme.swift in Sources */,
 				BCBC45762848829900ED7997 /* StartScreen.swift in Sources */,
 				4C074AED2848788500FC3514 /* PlaygroundViewModel.swift in Sources */,
+				5B567B05286D5F8E00F47B1E /* RotateMatrix.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
