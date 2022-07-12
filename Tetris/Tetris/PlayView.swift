@@ -26,6 +26,7 @@ struct PlayView: View {
                 }
             }
         }.ignoresSafeArea()
+            .onAppear(perform: viewModel.onViewAppear)
     }
 }
 
