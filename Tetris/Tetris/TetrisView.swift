@@ -15,7 +15,7 @@ struct TetrisView: View {
                 PauseButton()
             }
             .frame(width: UIScreen.main.bounds.size.width, height: 100, alignment: .center)
-            PlayAreaView()
+            PlayView(viewModel: PlaygroundViewModel())
                 .frame(width: UIScreen.main.bounds.size.width, height: UIScreen.main.bounds.size.height - 150, alignment: .center)
                 .border(.black)
         }
@@ -52,12 +52,6 @@ private struct PauseButton: View {
             .padding()
             .background(Color(red: 0, green: 0, blue: 0.5))
             .clipShape(Capsule())
-    }
-}
-
-struct PlayAreaView: View {
-    var body: some View {
-        PlayView(viewModel: PlaygroundViewModel())
     }
 }
 

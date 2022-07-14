@@ -2,7 +2,7 @@ import Foundation
 
 protocol BlockProtocol {
     var matrix: [[Int]] { get }
-    func rotateMatrix()
+    func rotateMatrix() -> BlockProtocol
 }
 
 enum BlockShape: CaseIterable  {
@@ -29,35 +29,34 @@ class LBlock: BlockProtocol{
                             [1, 0],
                             [1, 1]]
     
-    func rotateMatrix() {}
+    func rotateMatrix()  -> BlockProtocol { return self }
 }
 
 class ZBlock: BlockProtocol{
     var matrix: [[Int]] = [[1,1,0],
                            [0,1,1]]
     
-    func rotateMatrix() {}
+    func rotateMatrix()  -> BlockProtocol { return self }
 }
 
 class BoxBlock: BlockProtocol{
     var matrix: [[Int]] = [[1, 1],
                            [1, 1]]
     
-    func rotateMatrix() {}
+    func rotateMatrix()  -> BlockProtocol { return self }
 }
 
 class LineBlock: BlockProtocol{
     var matrix: [[Int]] = [[1],
                            [1],
                            [1]]
-    
-    func rotateMatrix() {}
+    func rotateMatrix()  -> BlockProtocol { return self }
 }
 
 class TBlock: BlockProtocol{
     var matrix: [[Int]] = [[1,1,1],
                            [0,1,0]]
     
-    func rotateMatrix() {}
+    func rotateMatrix()  -> BlockProtocol { return self }
 }
 
