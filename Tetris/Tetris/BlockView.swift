@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct BlockView: View {
-    @Binding var state: Int
+    var state: Int
     
     var body: some View {
         HStack {
