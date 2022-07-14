@@ -103,6 +103,7 @@ class PlaygroundViewModel: ObservableObject {
         }
         self.blockPosition = newPosition
         self.matrix = temp_matrix
+    }
     
     func restart() {
         matrix = Array(repeating: Array(repeating: 0, count: 9), count: 15)
