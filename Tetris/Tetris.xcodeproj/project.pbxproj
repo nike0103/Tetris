@@ -19,6 +19,7 @@
 		BC00E9C82851B28400CB10E3 /* TetrisTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC00E9C72851B28400CB10E3 /* TetrisTheme.swift */; };
 		BC00E9CC2851B2F300CB10E3 /* TetrisButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC00E9CB2851B2F300CB10E3 /* TetrisButtonView.swift */; };
 		BC00E9CE2851CE4800CB10E3 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC00E9CD2851CE4800CB10E3 /* GradientView.swift */; };
+		BC4B844828644A26004A314D /* Pause Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4B844728644A26004A314D /* Pause Screen.swift */; };
 		BCBC45762848829900ED7997 /* StartScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBC45752848829900ED7997 /* StartScreen.swift */; };
 		791CF32C28643CD70078E273 /* BlockManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791CF32B28643CD70078E273 /* BlockManager.swift */; };
 		7981B4E028513F0E008E694F /* Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7981B4DF28513F0E008E694F /* Block.swift */; };
@@ -38,6 +39,7 @@
 		BC00E9C72851B28400CB10E3 /* TetrisTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TetrisTheme.swift; sourceTree = "<group>"; };
 		BC00E9CB2851B2F300CB10E3 /* TetrisButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TetrisButtonView.swift; sourceTree = "<group>"; };
 		BC00E9CD2851CE4800CB10E3 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		BC4B844728644A26004A314D /* Pause Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Pause Screen.swift"; sourceTree = "<group>"; };
 		BCBC45752848829900ED7997 /* StartScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScreen.swift; sourceTree = "<group>"; };
 		791CF32B28643CD70078E273 /* BlockManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockManager.swift; sourceTree = "<group>"; };
 		7981B4DF28513F0E008E694F /* Block.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Block.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 				5B26FEE328327FB900A94C97 /* Assets.xcassets */,
 				7981B4DF28513F0E008E694F /* Block.swift */,
 				791CF32B28643CD70078E273 /* BlockManager.swift */,
+				BC4B844728644A26004A314D /* Pause Screen.swift */,
 				4C074AEA2848783F00FC3514 /* BlockView.swift */,
 				5B26FEE128327FB700A94C97 /* ContentView.swift */,
 				4C074AEC2848788500FC3514 /* PlaygroundViewModel.swift */,
@@ -180,6 +183,7 @@
 				7981B4E028513F0E008E694F /* Block.swift in Sources */,
 				5B26FEE028327FB700A94C97 /* TetrisApp.swift in Sources */,
 				BC00E9C82851B28400CB10E3 /* TetrisTheme.swift in Sources */,
+				BC4B844828644A26004A314D /* Pause Screen.swift in Sources */,
 				BCBC45762848829900ED7997 /* StartScreen.swift in Sources */,
 				4C074AED2848788500FC3514 /* PlaygroundViewModel.swift in Sources */,
 				5B567B05286D5F8E00F47B1E /* RotateMatrix.swift in Sources */,

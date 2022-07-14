@@ -6,7 +6,7 @@ typealias Coordinates = (x: Int, y: Int)
 class PlaygroundViewModel: ObservableObject {
     static let columns = 9
     static let rows = 15
-    @Published var matrix = Array(repeating: Array(repeating: 0, count: columns), count: rows)
+    @Published private(set) var matrix = Array(repeating: Array(repeating: 0, count: 9), count: 15)
     var timer = Timer()
     private let blocksManager: BlocksManager
     private var blockPosition: Coordinates = (x: -1, y: -1)
@@ -103,5 +103,9 @@ class PlaygroundViewModel: ObservableObject {
         }
         self.blockPosition = newPosition
         self.matrix = temp_matrix
+    }
+    
+    func restart() {
+        matrix = Array(repeating: Array(repeating: 0, count: 9), count: 15)
     }
 }
